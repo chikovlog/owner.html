@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartOwner Dashboard - Laundry</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f0f2f5; }
+        .header { background-color: #1a73e8; color: white; padding: 15px 20px; text-align: center; }
+        .container { padding: 15px; }
+        .card-container { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+        .card { background: white; flex: 1; min-width: 120px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .card h3 { margin: 0; font-size: 14px; color: #5f6368; }
+        .card p { margin: 10px 0 0 0; font-size: 20px; font-weight: bold; color: #1a73e8; }
+        table { width: 100%; background: white; border-collapse: collapse; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; font-size: 14px; }
+        th { background-color: #f8f9fa; }
+        .status { padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+        .status.selesai { background-color: #e6f4ea; color: #137333; }
+        .status.proses { background-color: #fef7e0; color: #b06000; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h2>📊 Dashboard Owner</h2>
+</div>
+
+<div class="container">
+    <div class="card-container">
+        <div class="card">
+            <h3>Omzet Hari Ini</h3>
+            <p>Rp 450.000</p>
+        </div>
+        <div class="card">
+            <h3>Cucian Masuk</h3>
+            <p>24 Kg</p>
+        </div>
+    </div>
+
+    <h3 style="color: #333;">Pantauan Multi-Outlet</h3>
+    <table>
+        <tr>
+            <th>Cabang</th>
+            <th>Pelanggan</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Kenzo Mesin Laundry</td>
+            <td>Budi (Cuci Komplit)</td>
+            <td><span class="status selesai">Selesai</span></td>
+        </tr>
+        <tr>
+            <td>Vinsky Laundry</td>
+            <td>Siti (Bedcover)</td>
+            <td><span class="status proses">Proses</span></td>
+        </tr>
+        <tr>
+            <td>Sun Laundry</td>
+            <td>Andi (Karpet)</td>
+            <td><span class="status proses">Proses</span></td>
+        </tr>
+        <tr>
+            <td>Asmaja Laundry</td>
+            <td>Rina (Setrika)</td>
+            <td><span class="status selesai">Selesai</span></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
